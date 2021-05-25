@@ -10,22 +10,22 @@ Project is based on those datasets:
 1. Demographics dataset 
 U.S. City Demographic Data: This dataset contains information about the demographics of all US cities and census-designated places with a population greater or equal to 65,000.
 
-![demo](images/Demographic.PNG)
+![demo](images/Demographic.png)
 
 2. Immigration dataset (I94 Immigration Data)
 This data comes from the US national Tourism and Trade Office. Each report contains udefull information about international visitor arrival, statistics by world regions, type of visa, mode of transportation, age groups, and the top ports of entry.
 
-![imm](images/Immigration.PNG)
+![imm](images/Immigration.png)
 
 3. Airport dataset
 This tables contains airport codes with corresponding cities.
 
-![airp](images/airport.PNG)
+![airp](images/airport.png)
 
 4. Temperature dataset
 This dataset includes information about temperature in cities.
 
-![temp](images/temperature.PNG)
+![temp](images/temperature.png)
 
 ## Files (FILL)
 
@@ -57,7 +57,7 @@ Datasets have been cleaned and prepared for future analysis. Columns with sagnif
 
 Database is created in star schema. There are one fact table and three dimension tables. The tables and links between them are presented below:
 
-![conceptual](images/conceptual.PNG)
+![conceptual](images/conceptual.png)
 
  Immigration table is the origin of the center of this model. The immigration fact table is based on this dataset. Demografic dimension table with the information about population is connected with fact table at the state level. To create this link it was necessary to join table with full states names table. Airport dimension table which contains detailed information about airports is linked to the immigration fact table at the state level. To make this connection creating a column with state data was needed. Temperature dimension table is linked with immigration dimension table at the country level.
 
